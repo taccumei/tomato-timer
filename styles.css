@@ -1,0 +1,98 @@
+/* TIMER SECTION */
+:root {
+  --pomodoro: rgb(183, 69, 69);
+  --shortBreak: rgb(155, 130, 56);
+  --longBreak: rgb(81, 138, 88);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}
+
+.title {
+  font-size: 36px;
+  margin-bottom: 60px;
+}
+
+.content {
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 300px;
+  width: 400px;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#pomodoro,
+#short-break,
+#long-break {
+  width: 120px;
+  background-color: rgba(0, 0, 0, 0.01);
+  padding: 5px 5px;
+  font-size: 18px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.mode-button.active {
+  background-color: rgba(0, 0, 0, 0.15) !important;
+  font-weight: bold;
+}
+
+.options {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mode-btns {
+  margin-bottom: 30px;
+}
+
+.clock {
+  font-size: 120px;
+  font-weight: bold;
+}
+
+span {
+  display: table-cell;
+}
+
+.main-button.active {
+  width: 200px;
+  background-color: white;
+  font-weight: bold;
+  padding: 15px 70px;
+  font-size: 22px;
+  border-radius: 4px;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: none !important;
+  margin: 36px 0px 6px 0px;
+}
+
+.main-button {
+  width: 200px;
+  background-color: white;
+  font-weight: bold;
+  padding: 15px 70px;
+  font-size: 22px;
+  border-radius: 4px;
+  border: none;
+  text-transform: uppercase;
+  box-shadow: rgb(235, 235, 235) 0px 6px 0px;
+  cursor: pointer;
+  margin-top: 30px;
+}
